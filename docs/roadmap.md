@@ -5,10 +5,10 @@
 | ID | 任务 | 依赖 | 状态 | 验收依据 |
 | --- | --- | --- | --- | --- |
 | OCR-CORE | 独立 OCR 引擎、原始文字、字段候选 | 无 | 已完成 | 6 项规则/API 测试；真实 PNG/PDF 推理 |
-| OCR-WEB | 本地工作台与 HTTP 集成示例 | OCR-CORE | 待验证 | 静态 HTTP 与真实 API 通过；浏览器交互待验 |
+| OCR-WEB | 本地工作台与 HTTP 集成示例 | OCR-CORE | 已完成 | 工作台识别结果可见；用户确认验收通过 |
 | OSS-DOC | 中英文 README、部署、许可与材料清理 | 无 | 已完成 | 链接有效、完整 Apache 文本、文件清单与敏感扫描 |
-| LOCAL-ACCEPT | 启动本机服务供用户验收 | OCR-CORE/OCR-WEB | 进行中 | 就绪为 true；用户验收待完成 |
-| OSS-PUBLISH | 浏览器创建 GitHub 仓库并提交 | OSS-DOC/LOCAL-ACCEPT | 待开始 | 仓库 URL、远端文件和提交 |
+| LOCAL-ACCEPT | 启动本机服务供用户验收 | OCR-CORE/OCR-WEB | 已完成 | 用户于 2026-11-11 明确“验收通过，可以发布” |
+| OSS-PUBLISH | 浏览器创建 GitHub 仓库并提交 | OSS-DOC/LOCAL-ACCEPT | 进行中 | 浏览器发布准备；远端提交待核验 |
 
 ## 后续阶段
 
@@ -19,4 +19,4 @@
 
 不发布未经测量的准确率、零泄露或合规保证。
 
-本轮文件与证据见 [交付记录](delivery-evidence.md)。用户验收和 GitHub 发布仍是未完成项。
+本轮文件与证据见 [交付记录](delivery-evidence.md)。用户验收已完成，GitHub 发布正在执行。
