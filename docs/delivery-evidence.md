@@ -27,7 +27,7 @@ PaddleOCR / PaddlePaddle / PaddleX 使用本地准备的官方模型缓存，不
 - Docker Compose、Linux 与 GPU 环境未实测；配方和限制已在 README 中说明。
 - GitHub 发布已按用户授权在本地验收后执行。[公开仓库](https://github.com/leongaooo/obscura-ocr) 已通过 Computer Use 浏览器创建；浏览器随后报告另一个扩展界面占用，未使用浏览器凭据，通过本机已有 Git 凭据推送代码。
 - 公开仓库页面标记 Public，中文首页与英文 README 均存在；远端 main 与本地推送提交一致。
-- 首次 [GitHub Actions](https://github.com/leongaooo/obscura-ocr/actions/runs/42989343737) 显示 Success（19 秒），在 Ubuntu / Python 3.11 执行格式、lint 与测试。这不替代 Docker 或真实 Linux 模型推理验收。
+- [GitHub Actions](https://github.com/leongaooo/obscura-ocr/actions/runs/42989534826) 显示 Success（21 秒，测试步骤 19 秒），在 Ubuntu / Python 3.11 执行格式、lint 与测试。这不替代 Docker 或真实 Linux 模型推理验收。
 - 当前无 GitHub CLI 登录；未获取或复制浏览器登录凭据。公开 REST API 遇到匿名访问限流，仓库与 Actions 结果改由公开 HTML 及 Git 远端引用核验。
 
 ## 已解决问题
