@@ -8,7 +8,7 @@
 | OCR-WEB | 本地工作台与 HTTP 集成示例 | OCR-CORE | 已完成 | 工作台识别结果可见；用户确认验收通过 |
 | OSS-DOC | 中英文 README、部署、许可与材料清理 | 无 | 已完成 | 链接有效、完整 Apache 文本、文件清单与敏感扫描 |
 | LOCAL-ACCEPT | 启动本机服务供用户验收 | OCR-CORE/OCR-WEB | 已完成 | 用户于 2026-11-11 明确“验收通过，可以发布” |
-| OSS-PUBLISH | 浏览器创建 GitHub 仓库并提交 | OSS-DOC/LOCAL-ACCEPT | 进行中 | 浏览器发布准备；远端提交待核验 |
+| OSS-PUBLISH | 浏览器创建 GitHub 仓库并提交 | OSS-DOC/LOCAL-ACCEPT | 已完成 | 浏览器创建公开仓库，Git 推送；公开页面和 Actions 成功结果已核验 |
 
 ## 后续阶段
 
@@ -19,4 +19,4 @@
 
 不发布未经测量的准确率、零泄露或合规保证。
 
-本轮文件与证据见 [交付记录](delivery-evidence.md)。用户验收已完成，GitHub 发布正在执行。
+本轮文件与证据见 [交付记录](delivery-evidence.md)。用户验收与 GitHub 发布均已完成。

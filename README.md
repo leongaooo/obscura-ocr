@@ -4,6 +4,8 @@
 
 [English](README.en.md) · [部署指南](docs/deployment-modes.md) · [API 集成](docs/integration.md) · [交付计划](docs/roadmap.md)
 
+[![Core checks](https://github.com/leongaooo/obscura-ocr/actions/workflows/ci.yml/badge.svg)](https://github.com/leongaooo/obscura-ocr/actions/workflows/ci.yml)
+
 把图片和 PDF 转为带位置、置信度与来源证据的文字及票据字段。无需云端账户，不绑定报销或其他业务系统；你决定服务运行在哪台机器、文件留在哪里。
 
 ## 已实现能力

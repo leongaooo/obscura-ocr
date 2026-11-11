@@ -4,6 +4,8 @@
 
 [简体中文](README.md) · [Deployment](docs/deployment-modes.md) · [Integration](docs/integration.md)
 
+[![Core checks](https://github.com/leongaooo/obscura-ocr/actions/workflows/ci.yml/badge.svg)](https://github.com/leongaooo/obscura-ocr/actions/workflows/ci.yml)
+
 A standalone OCR service turning images and PDFs into text tokens and evidence-backed Chinese receipt fields. No cloud account, business database or reimbursement application required. Your infrastructure, your document boundary.
 
 ## Available today
