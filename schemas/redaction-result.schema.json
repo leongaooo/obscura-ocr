@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ObscuraOCR Redaction Result",
+  "type": "object",
+  "required": ["taskId", "inputFingerprint", "outputFingerprint", "actions", "validation"],
+  "properties": {
+    "taskId": { "type": "string" },
+    "inputFingerprint": { "type": "string" },
+    "outputFingerprint": { "type": "string" },
+    "actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["candidateId", "action", "reversible"],
+        "properties": {
+          "candidateId": { "type": "string" },
+          "action": { "type": "string" },
+          "reversible": { "type": "boolean" },
+          "policyId": { "type": "string" }
+        }
+      }
+    },
+    "validation": {
+      "type": "object",
+      "required": ["passed", "checks"],
+      "properties": {
+        "passed": { "type": "boolean" },
+        "checks": { "type": "array", "items": { "type": "string" } },
+        "warnings": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+services:
+  ocr:
+    build: .
+    ports:
+      - "127.0.0.1:18083:18083"
+    volumes:
+      - models:/models
+    environment:
+      OBSCURA_OCR_MODEL_HOME: /models
+    restart: unless-stopped
+volumes:
+  models:

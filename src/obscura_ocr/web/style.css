@@ -1,0 +1,49 @@
+:root {
+  font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+  color: #192d2b;
+  background: #f4f4ee;
+  line-height: 1.65;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.2rem 4vw;
+  border-bottom: 1px solid #c9d0c7;
+}
+header span { flex: 1; color: #4e625d; font-size: .85rem; }
+a { color: inherit; }
+.brand { font-weight: 750; font-size: 1.3rem; text-decoration: none; }
+main { max-width: 1280px; padding: 3rem 2rem; margin: auto; }
+.eyebrow { color: #47685f; letter-spacing: .14em; font-size: .75rem; }
+h1 { font-size: clamp(2.3rem, 4vw, 4rem); line-height: 1.2; letter-spacing: -.04em; margin: 1.5rem 0; }
+.intro { max-width: 650px; color: #4b5e57; }
+.workspace { display: grid; grid-template-columns: 1fr 1.2fr; border: 1px solid #9aa99e; margin-top: 2.5rem; background: #fff; }
+section { padding: 2rem; min-width: 0; }
+section + section { border-left: 1px solid #c9d0c7; }
+h2 { font-size: .95rem; letter-spacing: .08em; margin: 0 0 2rem; }
+label { display: block; margin-bottom: .5rem; font-weight: 600; }
+input { width: 100%; padding: 1rem; border: 1px dashed #6f877a; background: #f5f8f2; font: inherit; }
+button { padding: .8rem 1.3rem; min-height: 48px; border: 0; background: #214f3e; color: white; font: inherit; cursor: pointer; }
+button:disabled { opacity: .55; cursor: default; }
+:focus-visible { outline: 3px solid #be6909; outline-offset: 4px; }
+#help, .note, footer { color: #56695e; font-size: .85rem; }
+#status { font-weight: 600; }
+dl { display: grid; grid-template-columns: minmax(120px, 1fr) 2fr; gap: .5rem 1rem; }
+dt { color: #54635c; }
+dd { margin: 0; overflow-wrap: anywhere; }
+details { margin: 1rem 0; }
+summary { cursor: pointer; }
+pre { white-space: pre-wrap; overflow-wrap: anywhere; max-height: 400px; overflow: auto; background: #f2f5ef; padding: 1rem; }
+footer { margin-top: 2rem; }
+@media (max-width: 760px) {
+  header { flex-wrap: wrap; gap: .6rem; }
+  header span { display: none; }
+  header a:last-child { margin-left: auto; }
+  main { padding: 2rem 1rem; }
+  .workspace { grid-template-columns: 1fr; }
+  section { padding: 1.3rem; }
+  section + section { border-left: 0; border-top: 1px solid #c9d0c7; }
+}

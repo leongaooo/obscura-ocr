@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ObscuraOCR · 暗纹 OCR</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <script src="/assets/app.js" defer></script>
+  </head>
+  <body>
+    <header><a href="/" class="brand">◈ ObscuraOCR</a><span>暗纹 OCR · Local document intelligence</span><a href="/docs">API 文档 ↗</a></header>
+    <main>
+      <p class="eyebrow">SELF-HOSTED / OPEN SOURCE / INTEGRATION READY</p>
+      <h1>识别文档，<br>让数据留在你手中。</h1>
+      <p class="intro">自由部署的 OCR 技术工作台。上传图片或 PDF，一次识别返回文字、位置、置信度与票据字段证据。</p>
+      <div class="workspace">
+        <section>
+          <h2>01 / 选择文件</h2>
+          <form id="upload" action="/api/recognize" method="post" enctype="multipart/form-data">
+            <label for="file">文档文件（必选）</label>
+            <input id="file" name="file" type="file" accept="image/png,image/jpeg,application/pdf" required aria-describedby="help">
+            <p id="help">PNG、JPEG、PDF · 默认 20 MB / 10 页以内。文件仅发送到当前部署的服务。</p>
+            <button id="submit" type="submit">开始识别 / Recognize →</button>
+          </form>
+          <p id="status" role="status">正在检查引擎…</p>
+          <p class="note">结果用于辅助提取，需人工确认。本次不提供自动遮盖文件功能。</p>
+        </section>
+        <section>
+          <h2>02 / 查看结果</h2>
+          <p id="summary">选择文件后，识别结果将显示在这里。</p>
+          <dl id="fields"></dl>
+          <details><summary>完整 JSON 与字段证据</summary><pre id="json">尚无结果</pre></details>
+          <button id="download" type="button" disabled>下载 JSON</button>
+        </section>
+      </div>
+      <footer>本地运行 · 无云端账号要求 · HTTP multipart 集成 · PaddleOCR<br>Temporary input files are deleted after processing. Recognition results stay in this browser until cleared or refreshed.</footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ObscuraOCR OCR Result",
+  "type": "object",
+  "required": ["documentId", "pages"],
+  "properties": {
+    "documentId": { "type": "string" },
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["pageId", "width", "height", "blocks"],
+        "properties": {
+          "pageId": { "type": "string" },
+          "width": { "type": "number", "exclusiveMinimum": 0 },
+          "height": { "type": "number", "exclusiveMinimum": 0 },
+          "blocks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "text", "bbox", "confidence"],
+              "properties": {
+                "id": { "type": "string" },
+                "text": { "type": "string" },
+                "bbox": { "type": "array", "minItems": 4, "maxItems": 4, "items": { "type": "number" } },
+                "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+                "blockType": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "engine": {
+      "type": "object",
+      "required": ["name", "version"],
+      "properties": {
+        "name": { "type": "string" },
+        "version": { "type": "string" },
+        "mode": { "type": "string" }
+      }
+    }
+  }
+}
